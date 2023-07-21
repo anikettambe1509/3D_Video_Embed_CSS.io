@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.vidWrapper {
+    transition: 0.5s all;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.player {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.isAngeled {
+    transform: perspective(1000px) rotateY(15deg);
+    perspective: 10px;
+    transform-style: preserve-3d;
+    box-shadow: -20px 30px 85px rgba(210, 130, 190, 0.5);
+    transition: 0.5s all;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 350px;
+    width: max-content;
+    /* border: 2px solid black; */
+}
+
+.isAngeled:hover {
+    transform: perspective(1000px) rotateY(0deg);
+    box-shadow: 0 5px 20px rgba(210, 130, 190, 0.75);
+}
